@@ -4,12 +4,17 @@ import static com.example.base_de_datos.R.id.nombres;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import Configuracion.SQLiteconexion;
+import Configuracion.Transacciones;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,24 +35,18 @@ public class MainActivity extends AppCompatActivity {
         btnproceso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               String nombresValor = nombres.getText().toString();
-                String apellidosValor = apellidos.getText().toString();
-                String telefonoValor = telefono.getText().toString();
-                
-                if (nombresValor.isEmpty()|| apellidosValor.isEmpty()  || telefonoValor.isEmpty()){
-                    Toast.makeText( MainActivity.this, "complete todos los  campos", Toast.LENGTH_SHORT
-                    ).show();
-                }else {
-                    Bundle enviarDatos = new Bundle();
-                    enviarDatos.putString("keynombres", nombresValor);
-                    enviarDatos.putString("keyapellidos", apellidosValor);
-                    enviarDatos.putString("keytelefono", telefonoValor);
-
-                    Intent intent = new Intent(MainActivity.this, MainActivitypage.class);
-                    intent.putExtras(enviarDatos);
-                    startActivity(intent);
+               AddPerson();
                 }
-            }
-        });
+            });
+        }
+
+    private void AddPerson() {
+        SQLiteconexion conexion = new SQLiteconexion(this, Transacciones.DBname, null, 1);
+        SQLiteDatabase db = conexion.getReadableDatabase();
+
+        ContentValues valores = new ContentValues();
+        valores.put(Transacciones.nombres, nombres.getText().toString());
+        valores.put(Transacciones.apellidos, apellidos.getText().toString());
+
     }
 }
