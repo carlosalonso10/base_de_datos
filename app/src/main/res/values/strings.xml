@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">base_de_datos</string>
+    <string name="nombres">Escriba su nombre</string>
+    <string name="apellidos">Escriba su apellido</string>
+    <string name="telefono">Ingrese su telefono</string>
+    <string name="btn_proceso">PROCESAR</string>
+</resources>
