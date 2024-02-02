@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#439EE7"
+    tools:backgroundTint="#475FE1"
     tools:context=".MainActivitypage">
 
     <TextView
@@ -12,10 +14,10 @@
         android:layout_height="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.112" />
 
     <TextView
         android:id="@+id/lblapellidos"
@@ -41,15 +43,16 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="367dp"
-        android:layout_height="34dp"
+        android:layout_width="369dp"
+        android:layout_height="64dp"
+        android:background="#2196F3"
         android:text="Los Datos"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021" />
+        app:layout_constraintVertical_bias="0.018" />
 </androidx.constraintlayout.widget.ConstraintLayout>

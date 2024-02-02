@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 
 public class MainActivitypage extends AppCompatActivity {
-       TextView nombres, apellidos, telefono;
+       TextView nombres, apellidos, telefono, edad, correo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

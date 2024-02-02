@@ -4,4 +4,6 @@
     <string name="apellidos">Escriba su apellido</string>
     <string name="telefono">Ingrese su telefono</string>
     <string name="btn_proceso">PROCESAR</string>
+    <string name="edad">Ingrese su edad</string>
+    <string name="correo">Ingrese  su correo</string>
 </resources>
