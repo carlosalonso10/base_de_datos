@@ -42,8 +42,9 @@
 
     <Button
         android:id="@+id/btnproceso"
-        android:layout_width="216dp"
+        android:layout_width="300dp"
         android:layout_height="72dp"
+        android:background="#3391DC"
         android:text="@string/btn_proceso"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +98,7 @@
         android:id="@+id/textView"
         android:layout_width="390dp"
         android:layout_height="50dp"
-        android:background="#6D79EE"
+        android:background="#4EAFBB"
         android:text="Ingrese sus datos"
         android:textAlignment="center"
         android:textSize="34sp"

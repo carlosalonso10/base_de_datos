@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#439EE7"
-    tools:backgroundTint="#475FE1"
+    tools:backgroundTint="#3EB9F1"
     tools:context=".MainActivitypage">
 
     <TextView
@@ -45,7 +45,7 @@
         android:id="@+id/textView4"
         android:layout_width="369dp"
         android:layout_height="64dp"
-        android:background="#2196F3"
+        android:background="#58B0F5"
         android:text="Los Datos"
         android:textAlignment="center"
         android:textSize="48sp"
