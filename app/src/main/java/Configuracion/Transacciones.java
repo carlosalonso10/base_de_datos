@@ -1,5 +1,9 @@
 package Configuracion;
 
+import android.database.sqlite.SQLiteDatabase;
+
+import com.example.base_de_datos.MainActivityActualizar;
+
 public class Transacciones {
     public static final String DBname = "PM012024";
 
@@ -27,5 +31,9 @@ public class Transacciones {
     public static final String DropTablePersonas = " DROP TABLE IF EXISTS " + Tablepersonas;
 
     public static final String SelectAllPersonas = " SELECT * FROM " + Tablepersonas;
+
+    public Transacciones(MainActivityActualizar mainActivityActualizar, String DBname, Object o, int i) {
+    }
+
 
 }

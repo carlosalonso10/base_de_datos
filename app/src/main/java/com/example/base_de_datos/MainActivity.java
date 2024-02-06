@@ -59,5 +59,17 @@ public class MainActivity extends AppCompatActivity {
                 Toast.LENGTH_LONG).show();
 
         db.close();
+
+        LimpiarPantalla();
     }
+    private void LimpiarPantalla()
+    {
+        nombres.setText("");
+        apellidos.setText("");
+        telefono.setText("");
+        edad.setText("");
+        correo.setText("");
+        direccion.setText("");
+    }
+
 }

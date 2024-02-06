@@ -9,4 +9,14 @@
     <string name="direccion">Ingrese su direccion</string>
     <string name="PantallaIngreso">Agregar persona</string>
     <string name="PantallaLista">Lista agregados</string>
+    <string name="idbuscar">Ingrese el ID Ejemplo \"1\"</string>
+    <string name="buscarregistro">Buscar Registro</string>
+    <string name="btnactualizar">Actualizar Registro</string>
+    <string name="eliminarregistro">Eliminar el Registro</string>
+    <string name="nom">NOMBRE</string>
+    <string name="apelli">APELLIDO</string>
+    <string name="telef">TELEFONO</string>
+    <string name="eda">EDAD</string>
+    <string name="correos">CORREO</string>
+    <string name="direcciones">DIRECCIONES</string>
 </resources>
