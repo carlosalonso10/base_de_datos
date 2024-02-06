@@ -58,8 +58,7 @@ public class Personas {
         this.telefono = telefono;
     }
 
-    public Integer getEdad() {
-        return edad;
+    public Integer getEdad() {return edad;
     }
 
     public void setEdad(Integer edad) {

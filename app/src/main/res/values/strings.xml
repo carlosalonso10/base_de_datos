@@ -7,4 +7,6 @@
     <string name="edad">Ingrese su edad</string>
     <string name="correo">Ingrese  su correo</string>
     <string name="direccion">Ingrese su direccion</string>
+    <string name="PantallaIngreso">Agregar persona</string>
+    <string name="PantallaLista">Lista agregados</string>
 </resources>

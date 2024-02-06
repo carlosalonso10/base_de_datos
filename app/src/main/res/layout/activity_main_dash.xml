@@ -4,6 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#94E1A2"
     tools:context=".MainActivityDash">
 
+    <Button
+        android:id="@+id/btnlist"
+        android:layout_width="351dp"
+        android:layout_height="89dp"
+        android:text="@string/PantallaLista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="347dp"
+        android:layout_height="93dp"
+        android:text="@string/PantallaIngreso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
 </androidx.constraintlayout.widget.ConstraintLayout>

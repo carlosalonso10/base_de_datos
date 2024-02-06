@@ -30,7 +30,7 @@ public class MainActivityList extends AppCompatActivity {
 
      ObtenerInfo();
 
-        ArrayAdapter adp = new ArrayAdapter(this, android.R.layout.simple_list_item_1,Arreglo);
+        ArrayAdapter adp = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,Arreglo);
         listpersonas.setAdapter(adp);
     }
     private void ObtenerInfo()
@@ -66,7 +66,10 @@ public class MainActivityList extends AppCompatActivity {
             Arreglo.add(lista.get(i).getId() + " - "+
                         lista.get(i).getNombres() + " - "+
                         lista.get(i).getApellidos() + " - "+
-                        lista.get(i).getTelefono());
+                        lista.get(i).getTelefono()+ " - " +
+                        lista.get(i).getEdad()+ " - " +
+                            lista.get(i).getCorreo()+ "- " +
+                            lista.get(i).getDireccion());
         }
     }
 }

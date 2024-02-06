@@ -1,7 +1,7 @@
 package Configuracion;
 
 public class Transacciones {
-    public static final String DBname = "PMO12024";
+    public static final String DBname = "PM012024";
 
 
     public static final String Tablepersonas = "personas";
@@ -21,12 +21,11 @@ public class Transacciones {
     //DDL create
 
     public static final String CreateTablePersonas = "Create table " + Tablepersonas + "(" +
-            "id INTEGER PRIMARY KEY AUTOINCREMENT, nombres TEXT, apellidos TEXT" + "telefono  TEXT"
-            + ", edad INTEGER," + "correo TEXT)" + "direccion TEXT";
+            "id INTEGER PRIMARY KEY AUTOINCREMENT, nombres TEXT, apellidos TEXT , telefono  TEXT, edad INTEGER,"+"  correo TEXT, direccion TEXT)";
 
 
-    public static final String DropTablePersonas = "DROP TABLE IF EXISTS" + Tablepersonas;
+    public static final String DropTablePersonas = " DROP TABLE IF EXISTS " + Tablepersonas;
 
-    public static String SelectAllPersonas = "SLECT * FROM" + Tablepersonas;
+    public static final String SelectAllPersonas = " SELECT * FROM " + Tablepersonas;
 
 }
