@@ -18,7 +18,7 @@ import Configuracion.Transacciones;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText nombres, apellidos, telefono, edad, correo;
+    EditText nombres, apellidos, telefono, edad, correo, direccion;
     Button btnproceso;
     private android.content.Intent intent;
 
@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         telefono = (EditText) findViewById(R.id.telefono);
         edad = (EditText) findViewById(R.id.edad);
         correo = (EditText) findViewById(R.id.correo);
+        direccion = (EditText) findViewById(R.id.direccion);
         btnproceso = (Button)findViewById(R.id.btnproceso);
 
         btnproceso.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         valores.put(Transacciones.telefono, telefono.getText().toString());
         valores.put(Transacciones.edad, edad.getText().toString());
         valores.put(Transacciones.correo, correo.getText().toString());
-
+        valores.put(Transacciones.direccion, direccion.getText().toString());
         Long resultado = db.insert(Transacciones.Tablepersonas, Transacciones.id, valores);
         Toast.makeText(getApplicationContext(), "Registro Ingresado con exito" + resultado.toString(),
                 Toast.LENGTH_LONG).show();

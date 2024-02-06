@@ -6,4 +6,5 @@
     <string name="btn_proceso">PROCESAR</string>
     <string name="edad">Ingrese su edad</string>
     <string name="correo">Ingrese  su correo</string>
+    <string name="direccion">Ingrese su direccion</string>
 </resources>
