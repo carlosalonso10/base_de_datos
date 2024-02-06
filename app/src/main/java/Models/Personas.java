@@ -74,7 +74,7 @@ public class Personas {
         this.correo = correo;
     }
 
-    public String getDireccion(){return correo;}
+    public String getDireccion(){return direccion;}
     public  void setDireccion(String direccion){this.direccion = direccion;
 
 

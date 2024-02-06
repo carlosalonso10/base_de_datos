@@ -50,6 +50,7 @@ public class MainActivityList extends AppCompatActivity {
          person.setTelefono(cursor.getInt(3));
          person.setEdad(cursor.getInt( 4));
          person.setCorreo(cursor.getString(5));
+         person.setDireccion(cursor.getString(6));
 
          lista.add(person);
     }
