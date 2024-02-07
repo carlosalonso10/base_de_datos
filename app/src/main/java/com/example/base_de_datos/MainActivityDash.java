@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivityDash extends AppCompatActivity {
-   Button btnadd, btnlist;
+   Button btnadd, btnlist, btnactualizardatos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +16,7 @@ public class MainActivityDash extends AppCompatActivity {
 
         btnadd =(Button) findViewById(R.id.btnadd);
         btnlist = (Button) findViewById(R.id.btnlist);
-
+        btnactualizardatos =(Button) findViewById(R.id.btnactualizardatos);
 
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +35,13 @@ public class MainActivityDash extends AppCompatActivity {
             }
         });
 
+        btnactualizardatos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivityActualizar.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

@@ -19,4 +19,5 @@
     <string name="eda">EDAD</string>
     <string name="correos">CORREO</string>
     <string name="direcciones">DIRECCIONES</string>
+    <string name="btnactualizardatos">IR Actualizar datos</string>
 </resources>

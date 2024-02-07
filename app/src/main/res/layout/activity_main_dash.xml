@@ -11,6 +11,7 @@
         android:id="@+id/btnlist"
         android:layout_width="351dp"
         android:layout_height="89dp"
+        android:backgroundTint="#FF5722"
         android:text="@string/PantallaLista"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,6 +22,7 @@
         android:id="@+id/btnadd"
         android:layout_width="347dp"
         android:layout_height="93dp"
+        android:backgroundTint="#3F51B5"
         android:text="@string/PantallaIngreso"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,4 +30,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.298" />
+
+    <Button
+        android:id="@+id/btnactualizardatos"
+        android:layout_width="344dp"
+        android:layout_height="83dp"
+        android:backgroundTint="#4CAF50"
+        android:hint="@string/btnactualizardatos"
+        android:textColor="#F2ECEC"
+        android:textColorHint="#0B0606"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <TextView
+        android:id="@+id/txtmenu"
+        android:layout_width="189dp"
+        android:layout_height="75dp"
+        android:fontFamily="monospace"
+        android:text="MENU"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
 </androidx.constraintlayout.widget.ConstraintLayout>
