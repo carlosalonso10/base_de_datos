@@ -20,4 +20,6 @@
     <string name="correos">CORREO</string>
     <string name="direcciones">DIRECCIONES</string>
     <string name="btnactualizardatos">IR Actualizar datos</string>
+    <string name="btnimagen">TOMAR IMAGEN</string>
+    <string name="TomarFoto">Capturar Foto</string>
 </resources>

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivityDash extends AppCompatActivity {
-   Button btnadd, btnlist, btnactualizardatos;
+   Button btnadd, btnlist, btnactualizardatos, btnimagen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,5 +43,12 @@ public class MainActivityDash extends AppCompatActivity {
             }
         });
 
+        btnimagen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ActivityFoto.class);
+                startActivity(intent);
+            }
+        });
     }
 }
