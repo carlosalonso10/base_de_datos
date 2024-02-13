@@ -16,6 +16,7 @@
     <Button
         android:id="@+id/btntakefoto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="111dp"
+        android:backgroundTint="#51A454"
         android:text="@string/TomarFoto" />
 </LinearLayout>

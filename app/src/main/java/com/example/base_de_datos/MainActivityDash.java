@@ -17,7 +17,7 @@ public class MainActivityDash extends AppCompatActivity {
         btnadd =(Button) findViewById(R.id.btnadd);
         btnlist = (Button) findViewById(R.id.btnlist);
         btnactualizardatos =(Button) findViewById(R.id.btnactualizardatos);
-
+        btnimagen=(Button) findViewById(R.id.btnimagen);
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

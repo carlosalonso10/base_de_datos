@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-     <uses-feature android:name="android.hardware.camera"
-         android:required="true"/>
 
-         <uses-feature android:name="android.hardware.camera2"
-             android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
 
     <queries>
+
         <!-- Browser -->
         <intent>
             <action android:name="android.intent.action.VIEW" />
@@ -26,7 +29,6 @@
         </intent>
     </queries>
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -38,8 +40,11 @@
         android:theme="@style/Theme.Base_de_datos"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityFoto"
+            android:name=".ActivityCombo"
             android:exported="false" />
+        <activity
+            android:name=".ActivityFoto"
+            android:exported="true" />
         <activity
             android:name=".MainActivityActualizar"
             android:exported="false" />
@@ -61,6 +66,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
