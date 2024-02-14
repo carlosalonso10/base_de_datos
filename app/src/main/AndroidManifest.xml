@@ -40,6 +40,9 @@
         android:theme="@style/Theme.Base_de_datos"
         tools:targetApi="31">
         <activity
+            android:name=".ActivitySpeech"
+            android:exported="false" />
+        <activity
             android:name=".ActivityCombo"
             android:exported="false" />
         <activity
